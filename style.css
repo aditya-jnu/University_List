@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body{
     padding: 1rem;
     display: flex;
@@ -10,8 +11,11 @@ body{
     gap: 1em;
     background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(176,229,208,1) 42%, rgba(92,202,238,0.41) 93.6% );
 }
+
+
 .top{
     display: flex;
+    justify-content: space-between;
 }
 @media(max-width:500px){
     .top{
@@ -20,10 +24,30 @@ body{
         gap:0.5em;
     }
 }
+
+.top a{
+    border-radius: 0.5em;
+    transition: color 0.3s ease-in-out;
+}
+.top a:hover{
+    background-color: rgb(185, 185, 185);
+}
+
+
 #myInput{
-    border: 1px solid grey;
+    border: none;
+    border-radius: 0.5em;
     padding: 0.5em;
 }
+.btn{
+    margin-bottom: 0.25em;
+    transition: color 0.3s ease-in-out;
+}
+.btn:hover{
+    background-color: rgb(185, 185, 185);
+}
+
+
 .container{
     width: 100vw;
     display: flex;
